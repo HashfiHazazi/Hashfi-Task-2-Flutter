@@ -52,23 +52,27 @@ class UserBody extends StatelessWidget {
                     ),
                     subtitle: Text(userResult.email),
                     onTap: () {
-                      Navigator.pushNamed(context, '/userDetail', arguments: {
-                        'id': userResult.id,
-                        'name': userResult.name,
-                        'username': userResult.userName,
-                        'email': userResult.email,
-                        'street': userResult.address!.street,
-                        'suite': userResult.address!.suite,
-                        'city': userResult.address!.city,
-                        'zipcode': userResult.address!.zipcode,
-                        'lat': userResult.address!.userGeo!.lat,
-                        'lng': userResult.address!.userGeo!.lng,
-                        'phone': userResult.phone,
-                        'website': userResult.website,
-                        'companyName': userResult.company!.companyName,
-                        'catchphrase': userResult.company!.catchPhrase,
-                        'bs': userResult.company!.bs
-                      });
+                      Navigator.pushNamed(
+                        context,
+                        '/userDetail',
+                        arguments: {
+                          'id': userResult.id,
+                          'name': userResult.name,
+                          'username': userResult.userName,
+                          'email': userResult.email,
+                          'street': userResult.address!.street,
+                          'suite': userResult.address!.suite,
+                          'city': userResult.address!.city,
+                          'zipcode': userResult.address!.zipcode,
+                          'lat': userResult.address!.userGeo!.lat,
+                          'lng': userResult.address!.userGeo!.lng,
+                          'phone': userResult.phone,
+                          'website': userResult.website,
+                          'companyName': userResult.company!.companyName,
+                          'catchphrase': userResult.company!.catchPhrase,
+                          'bs': userResult.company!.bs
+                        },
+                      );
                     },
                   ),
                 ),
