@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/bottomNav',
+      initialRoute: '/welcome',
       onGenerateRoute: route.onRoute,
     );
   }

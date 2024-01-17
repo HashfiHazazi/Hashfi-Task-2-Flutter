@@ -1,4 +1,4 @@
-import 'dart:math';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -8,6 +8,7 @@ import 'package:hashfi_task2_app/pages/details/comment_detail_page.dart';
 import 'package:hashfi_task2_app/pages/details/post_detail_page.dart';
 import 'package:hashfi_task2_app/pages/error/not_found.dart';
 import 'package:hashfi_task2_app/pages/details/user_detail_page.dart';
+import 'package:hashfi_task2_app/pages/welcome_page.dart';
 import 'package:hashfi_task2_app/view_model/bloc/album_bloc/album_bloc.dart';
 import 'package:hashfi_task2_app/view_model/bloc/bottom_nav_bloc/bottom_nav_bloc.dart';
 import 'package:hashfi_task2_app/view_model/bloc/comment_bloc/comment_bloc.dart';
@@ -117,6 +118,8 @@ class MyRouter {
           builder: (context) => PostDetailPage(
               userId: pUserId, id: pId, title: pTitle, body: pBody),
         );
+      case '/welcome':
+        return MaterialPageRoute(builder: (context) => const WelcomePage());
       default:
         return MaterialPageRoute(builder: (context) => const NotFoundPage());
     }

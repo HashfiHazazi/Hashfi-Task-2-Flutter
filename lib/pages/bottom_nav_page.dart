@@ -22,12 +22,21 @@ class BottomNavPage extends StatelessWidget {
   ];
 
   List<Text> appBarTitle = <Text>[
-    const Text('FETCH USERS API', style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white)),
-    const Text('FETCH COMMENTS API', style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),),
-    const Text('FETCH ALBUMS API', style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),),
-    const Text('FETCH POSTS API', style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),),
+    const Text('FETCH USERS API',
+        style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white)),
+    const Text(
+      'FETCH COMMENTS API',
+      style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+    ),
+    const Text(
+      'FETCH ALBUMS API',
+      style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+    ),
+    const Text(
+      'FETCH POSTS API',
+      style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+    ),
   ];
-  
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +61,7 @@ class BottomNavPage extends StatelessWidget {
             backgroundColor: Theme.of(context).colorScheme.primary,
             title: appBarTitle.elementAt(state.tabIndex),
             leading: const Icon(null),
+            centerTitle: true,
           ),
           body: bottomNavBody.elementAt(state.tabIndex),
           bottomNavigationBar: BottomNavigationBar(
