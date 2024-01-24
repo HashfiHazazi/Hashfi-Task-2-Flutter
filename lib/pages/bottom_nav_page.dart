@@ -28,6 +28,7 @@ class BottomNavPage extends StatelessWidget {
       'FETCH COMMENTS API',
       style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
     ),
+    
     const Text(
       'FETCH ALBUMS API',
       style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
