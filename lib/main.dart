@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hashfi_task2_app/pages/routes/my_route.dart';
+import 'package:hashfi_task2_app/src/routers/routes/my_route.dart';
 
 void main() {
   runApp(MyApp());
