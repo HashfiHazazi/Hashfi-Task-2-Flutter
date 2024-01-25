@@ -8,7 +8,7 @@ class AlbumService implements AlbumRepository {
   @override
   Future<List<AlbumModel>> fetchAlbum() async {
     try {
-      final dio = Dio();
+      Dio dio = Dio();
       final albumResponse = await dio.get('$baseUrl/albums');
       final albumResult = albumResponse.data;
       List<AlbumModel> albumList =
