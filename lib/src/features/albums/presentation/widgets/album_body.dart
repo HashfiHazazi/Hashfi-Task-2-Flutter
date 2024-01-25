@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hashfi_task2_app/bloc/album_bloc/album_bloc.dart';
+import 'package:hashfi_task2_app/src/features/albums/presentation/states/album_bloc/album_bloc.dart';
 
 class AlbumBody extends StatelessWidget {
   const AlbumBody({super.key, required this.myAlbumBloc});

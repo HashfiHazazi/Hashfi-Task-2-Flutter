@@ -2,16 +2,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hashfi_task2_app/bloc/album_bloc/album_bloc.dart';
-import 'package:hashfi_task2_app/bloc/bottom_nav_bloc/bottom_nav_bloc.dart';
-import 'package:hashfi_task2_app/bloc/comment_bloc/comment_bloc.dart';
-import 'package:hashfi_task2_app/bloc/post_bloc/post_bloc.dart';
-import 'package:hashfi_task2_app/bloc/user_bloc/user_bloc.dart';
-import 'package:hashfi_task2_app/bottom_nav_page.dart';
+import 'package:hashfi_task2_app/src/features/albums/presentation/states/album_bloc/album_bloc.dart';
+import 'package:hashfi_task2_app/src/features/comments/presentation/states/comment_bloc/comment_bloc.dart';
+import 'package:hashfi_task2_app/src/features/home/presentation/states/bottom_nav_bloc/bottom_nav_bloc.dart';
+import 'package:hashfi_task2_app/src/features/home/presentation/widgets/bottom_nav_page.dart';
 import 'package:hashfi_task2_app/src/features/albums/presentation/widgets/album_detail_page.dart';
 import 'package:hashfi_task2_app/src/features/comments/presentation/widgets/comment_detail_page.dart';
+import 'package:hashfi_task2_app/src/features/posts/presentation/states/post_bloc/post_bloc.dart';
 import 'package:hashfi_task2_app/src/features/posts/presentation/widgets/post_detail_page.dart';
 import 'package:hashfi_task2_app/src/exceptions/error/not_found.dart';
+import 'package:hashfi_task2_app/src/features/users/presentation/states/user_bloc/user_bloc.dart';
 import 'package:hashfi_task2_app/src/features/users/presentation/widgets/user_detail_page.dart';
 import 'package:hashfi_task2_app/src/features/landing/presentation/widgets/welcome_page.dart';
 import 'package:hashfi_task2_app/src/features/albums/application/services/album_service.dart';

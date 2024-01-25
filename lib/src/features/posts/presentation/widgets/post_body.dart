@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hashfi_task2_app/bloc/post_bloc/post_bloc.dart';
 import 'package:hashfi_task2_app/src/exceptions/error/not_found.dart';
+import 'package:hashfi_task2_app/src/features/posts/presentation/states/post_bloc/post_bloc.dart';
 
 class PostBody extends StatelessWidget {
   final PostBloc myPostbloc;

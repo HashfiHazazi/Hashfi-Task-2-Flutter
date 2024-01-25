@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hashfi_task2_app/bloc/album_bloc/album_bloc.dart';
-import 'package:hashfi_task2_app/bloc/bottom_nav_bloc/bottom_nav_bloc.dart';
-import 'package:hashfi_task2_app/bloc/comment_bloc/comment_bloc.dart';
-import 'package:hashfi_task2_app/bloc/post_bloc/post_bloc.dart';
-import 'package:hashfi_task2_app/bloc/user_bloc/user_bloc.dart';
+import 'package:hashfi_task2_app/src/features/albums/presentation/states/album_bloc/album_bloc.dart';
 import 'package:hashfi_task2_app/src/features/albums/presentation/widgets/album_body.dart';
+import 'package:hashfi_task2_app/src/features/comments/presentation/states/comment_bloc/comment_bloc.dart';
 import 'package:hashfi_task2_app/src/features/comments/presentation/widgets/comment_body.dart';
+import 'package:hashfi_task2_app/src/features/home/presentation/states/bottom_nav_bloc/bottom_nav_bloc.dart';
+import 'package:hashfi_task2_app/src/features/posts/presentation/states/post_bloc/post_bloc.dart';
 import 'package:hashfi_task2_app/src/features/posts/presentation/widgets/post_body.dart';
+import 'package:hashfi_task2_app/src/features/users/presentation/states/user_bloc/user_bloc.dart';
 import 'package:hashfi_task2_app/src/features/users/presentation/widgets/user_body.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
-
+// ignore: must_be_immutable
 class BottomNavPage extends StatelessWidget {
   BottomNavPage({super.key});
 
@@ -22,21 +23,38 @@ class BottomNavPage extends StatelessWidget {
         icon: Icon(Icons.send_rounded), label: 'Post'),
   ];
 
-  List<Text> appBarTitle = <Text>[
-    const Text('FETCH USERS API',
-        style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white)),
-    const Text(
+  List<GradientText> appBarTitle = [
+    GradientText(
+      'FETCH USERS API',
+      colors: const [
+        Color.fromARGB(255, 255, 221, 0),
+        Color.fromARGB(255, 3, 220, 244)
+      ],
+      style: const TextStyle(fontWeight: FontWeight.w600),
+    ),
+    GradientText(
       'FETCH COMMENTS API',
-      style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+      colors: const [
+        Color.fromARGB(255, 255, 221, 0),
+        Color.fromARGB(255, 3, 220, 244)
+      ],
+      style: const TextStyle(fontWeight: FontWeight.w600),
     ),
-    
-    const Text(
+    GradientText(
       'FETCH ALBUMS API',
-      style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+      colors: const [
+        Color.fromARGB(255, 255, 221, 0),
+        Color.fromARGB(255, 3, 220, 244)
+      ],
+      style: const TextStyle(fontWeight: FontWeight.w600),
     ),
-    const Text(
+    GradientText(
       'FETCH POSTS API',
-      style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+      colors: const [
+        Color.fromARGB(255, 255, 221, 0),
+        Color.fromARGB(255, 3, 220, 244)
+      ],
+      style: const TextStyle(fontWeight: FontWeight.w600),
     ),
   ];
 

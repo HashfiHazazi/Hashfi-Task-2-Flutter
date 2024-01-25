@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hashfi_task2_app/bloc/user_bloc/user_bloc.dart';
+import 'package:hashfi_task2_app/src/features/users/presentation/states/user_bloc/user_bloc.dart';
 
 class UserBody extends StatelessWidget {
   const UserBody({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hashfi_task2_app/bloc/comment_bloc/comment_bloc.dart';
 import 'package:hashfi_task2_app/src/exceptions/error/not_found.dart';
+import 'package:hashfi_task2_app/src/features/comments/presentation/states/comment_bloc/comment_bloc.dart';
 
 class CommentBody extends StatelessWidget {
   const CommentBody({
