@@ -1,6 +1,6 @@
 {
-    "name": "hashfi_task2_app",
-    "short_name": "hashfi_task2_app",
+    "name": "hashfi_task2_project",
+    "short_name": "task2_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

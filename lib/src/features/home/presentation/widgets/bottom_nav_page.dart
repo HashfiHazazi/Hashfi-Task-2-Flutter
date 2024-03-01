@@ -19,40 +19,39 @@ class BottomNavPage extends StatelessWidget {
     const BottomNavigationBarItem(icon: Icon(Icons.person), label: 'User'),
     const BottomNavigationBarItem(icon: Icon(Icons.comment), label: 'Comment'),
     const BottomNavigationBarItem(icon: Icon(Icons.image), label: 'Album'),
-    const BottomNavigationBarItem(
-        icon: Icon(Icons.send_rounded), label: 'Post'),
+    const BottomNavigationBarItem(icon: Icon(Icons.send_rounded), label: 'Post'),
   ];
 
   List<GradientText> appBarTitle = [
     GradientText(
       'FETCH USERS API',
       colors: const [
-        Color.fromARGB(255, 255, 221, 0),
-        Color.fromARGB(255, 3, 220, 244)
+        Color(0xFFFFDD00),
+        Color(0xFF03DCF4)
       ],
       style: const TextStyle(fontWeight: FontWeight.w600),
     ),
     GradientText(
       'FETCH COMMENTS API',
       colors: const [
-        Color.fromARGB(255, 255, 221, 0),
-        Color.fromARGB(255, 3, 220, 244)
+        Color(0xFFFFDD00),
+        Color(0xFF03DCF4)
       ],
       style: const TextStyle(fontWeight: FontWeight.w600),
     ),
     GradientText(
       'FETCH ALBUMS API',
       colors: const [
-        Color.fromARGB(255, 255, 221, 0),
-        Color.fromARGB(255, 3, 220, 244)
+        Color(0xFFFFDD00),
+        Color(0xFF03DCF4)
       ],
       style: const TextStyle(fontWeight: FontWeight.w600),
     ),
     GradientText(
       'FETCH POSTS API',
       colors: const [
-        Color.fromARGB(255, 255, 221, 0),
-        Color.fromARGB(255, 3, 220, 244)
+        Color(0xFFFFDD00),
+        Color(0xFF03DCF4)
       ],
       style: const TextStyle(fontWeight: FontWeight.w600),
     ),

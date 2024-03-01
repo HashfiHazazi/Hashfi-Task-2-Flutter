@@ -35,7 +35,7 @@ class WelcomePage extends StatelessWidget {
                   },
                   child: const Padding(
                     padding: EdgeInsets.symmetric(vertical: 20),
-                    child: Text('CONTINUE'),
+                    child: Text('CONTINUE', style: TextStyle(fontWeight: FontWeight.w600),),
                   ),
                 ),
               )
